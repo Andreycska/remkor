@@ -640,6 +640,10 @@ body.show-nav .header,
     background: #E5E5E5;
 }
 
+.section--contacts {
+    padding: 60px 0 0;
+}
+
 .section--repair {
     padding: 60px 0 0;
 }
