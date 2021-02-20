@@ -237,15 +237,15 @@ $(function(){
 
     /*MAP*/
 
-    let wrapMap = $('#wrapMap');
-    let map = $(".contacts__frame");
+//     let wrapMap = $('#wrapMap');
+//     let map = $(".contacts__frame");
 
-    wrapMap.on('click', function() {
-        $(map).addClass('pointer');
-    });
+//     wrapMap.on('click', function() {
+//         $(map).addClass('pointer');
+//     });
 
-    $("#wrapMap").mouseout(function() {
-        $(map).removeClass('pointer');
-  })
+//     $("#wrapMap").mouseout(function() {
+//         $(map).removeClass('pointer');
+//   })
 
 });
