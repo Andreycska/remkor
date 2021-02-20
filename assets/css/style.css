@@ -1226,6 +1226,39 @@ body.show-nav .header,
     color: #6E6E6E;
 }
 
+/* CONTACTS */
+
+.contacts {
+    position: relative;
+}
+
+.contacts__inner {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    margin-top: -400px;
+
+    background-color: #fff;
+
+    position: relative;
+    z-index: 1;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0); */
+}
+
+.contacts__frame {
+    pointer-events: none;
+}
+
+.contacts__frame.pointer {
+    pointer-events: all;
+}
+
 /* SERVICES */
 
 .services {
