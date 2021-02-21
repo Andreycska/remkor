@@ -361,7 +361,21 @@ body.show-nav .header,
 .intro--blog {
     height: 350px;
 
-    background: url('../images/news-intro.jpg') center no-repeat;
+    background: url('../images/news.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.intro--privacy {
+    height: 350px;
+
+    background: url('../images/privet.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.intro--term {
+    height: 350px;
+
+    background: url('../images/izgotovlenie.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -663,6 +677,10 @@ body.show-nav .header,
 
 .section__title span {
     color: #004AF2;
+}
+
+.section__title--blog {
+    padding: 0 15px;
 }
 
 /* ABOUT */
@@ -1003,6 +1021,10 @@ body.show-nav .header,
     margin-bottom: 40px;
 }
 
+.clients__list-logo {
+    max-height: 120px;
+}
+
 /* REVIEWS */
 
 .reviews {
@@ -1167,7 +1189,8 @@ body.show-nav .header,
 .news {
     display: flex;
     justify-content: space-between;
-    margin: 0 -30px 30px;
+    flex-wrap: wrap;
+    margin: 0 -15px 30px;
 }
 
 .news--column {
@@ -1187,9 +1210,10 @@ body.show-nav .header,
 }
 
 .news__item {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 20px;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 
 .news__title {
@@ -1322,10 +1346,6 @@ body.show-nav .header,
     margin-top: auto;
 
     background: rgba(0, 0, 0, .9);
-    /* background: #F9F9F9; */
-    /* background-image: url('../images/tire-track-left.svg'), url('../images/tire-track-right.svg');
-    background-repeat: no-repeat;
-    background-position: left 0 bottom 0, right 0 bottom 0; */
 
     text-align: center;
 }
@@ -1695,14 +1715,16 @@ text p {
     }
 
     .nav.show {
-         transform: translateX(0);
+        font-size: 25px;
+
+        transform: translateX(0);
     }
 
     .nav__link {
         display: block;
         padding: 10px 15px;
 
-        text-align: right;
+        text-align: center;
     }
 
     /* BURGER */
@@ -1915,10 +1937,6 @@ text p {
 
     .news {
         flex-wrap: wrap;
-    }
-
-    .news__item {
-        width: 100%;
     }
 
     .news--column {
