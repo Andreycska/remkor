@@ -2057,7 +2057,7 @@ text p {
     }
 
     .section__title {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     /* ABOUT */
@@ -2173,6 +2173,12 @@ text p {
     .modal__close {
         right: 0;
         top: -30px;
+    }
+
+    /* TEXT */
+
+    .text h2 {
+        font-size: 20px;
     }
 }
 
