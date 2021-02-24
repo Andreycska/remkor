@@ -246,8 +246,6 @@ $(function(){
         $(map).addClass('pointer');
     });
 
-    // $("#wrapMap").mouseout(function() {
-    //     $(map).removeClass('pointer');
-    // });
+   /*LIGHTBOX GALARY  https://www.frescojs.com/documentation*/
 
 });
