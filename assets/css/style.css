@@ -319,6 +319,19 @@ body.show-nav .header,
     position: relative;
 }
 
+.intro--about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    background: url('../images/slider/about-company.jpg') center no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
 .intro--repair {
     display: flex;
     flex-direction: column;
