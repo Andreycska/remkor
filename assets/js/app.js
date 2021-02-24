@@ -228,6 +228,8 @@ $(function(){
             $(document).ready(function(){
                 $('.plant__number').spincrement({
                     thousandSeparator: "",
+                    from: 0,
+                    easing: 'spincrementEasing',
                     duration: 1200
                 });
             });
