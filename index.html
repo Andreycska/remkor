@@ -37,10 +37,11 @@
                     <a class="nav__link" href="#" data-scroll="#about">О компании</a>
                     <a class="nav__link" href="#" data-scroll="#serv">Услуги</a>
                     <a class="nav__link" href="#" data-scroll="#benefits">Преимущества</a>
-                    <a class="nav__link" href="#" data-scroll="#news">Новости</a>
+                    <a class="nav__link" href="#" data-scroll="#stat">Статистика</a>
+                    <a class="nav__link" href="#" data-scroll="#bayer">Закупки</a>
                     <a class="nav__link" href="#" data-scroll="#clients">Партнеры</a>
                     <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
-                    <a class="nav__link" href="#" data-modal="#becameClientModal">Свяжитесь с нами</a>
+                    <a class="nav__link" href="#" data-modal="#becameClientModal">Обратная связь</a>
                 </nav><!--/.NAV-->
 
                 <button class="burger" type="button" id="navToggle">
@@ -63,7 +64,9 @@
             <div class="intro__slider" id="introSlider">
 
                 <div class="slider-item">
-                    <img class="intro__slider-photo" src="assets/images/slider/about-company.jpg" alt="car on road">
+                    <div class="intro__slider-header">
+                        <img class="intro__slider-photo" src="assets/images/slider/company.jpg" alt="car on road">
+                    </div>
                     <div class="intro__text">
                         <div class="container">
                             <div class="intro__content">
@@ -76,7 +79,9 @@
                 </div>
 
                 <div class="slider-item">
-                    <img class="intro__slider-photo" src="assets/images/slider/rapair.jpg" alt="airplane">
+                    <div class="intro__slider-header">
+                        <img class="intro__slider-photo" src="assets/images/slider/ship-repair.jpg" alt="airplane">
+                    </div>
                     <div class="intro__text">
                         <div class="container">
                             <div class="intro__content">
@@ -88,7 +93,9 @@
                 </div>
 
                 <div class="slider-item">
-                    <img class="intro__slider-photo" src="assets/images/slider/obrabotka.jpg" alt="railways">
+                    <div class="intro__slider-header">
+                        <img class="intro__slider-photo" src="assets/images/slider/obrabotka.jpg" alt="railways">
+                    </div>
                     <div class="intro__text">
                         <div class="container">
                             <div class="intro__content">
@@ -100,7 +107,9 @@
                 </div>
 
                 <div class="slider-item">
-                    <img class="intro__slider-photo" src="assets/images/slider/modernizacia.jpg" alt="railways">
+                    <div class="intro__slider-header">
+                        <img class="intro__slider-photo" src="assets/images/slider/modernization.jpg" alt="railways">
+                    </div>
                     <div class="intro__text">
                         <div class="container">
                             <div class="intro__content">
@@ -121,7 +130,7 @@
         <div class="container">
             <div class="about">
                 
-                <div class="about__item">
+                <div class="about__item about__item--content">
                     <h4 class="about__title">О компании</h4>
                     <div class="about__text">
                         <p>Компания РЕМКОР специализируется на судоремонте. Производственная площадка компании - одна из крупнейших в Азово-Черноморском регионе - расположена на юго-западном побережье Крыма в городе Севастополь на пересечении морских путей из Средиземного моря в российские порты.</p>
@@ -133,7 +142,7 @@
                 </div><!--/.ABOUT__ITEM-->
 
                 <div class="about__item">
-                    <img class="img" src="assets/images/repair-work.jpg" alt="">
+                    <img class="img" src="assets/images/about-preview.jpg" alt="">
                 </div><!--/.ABOUT__ITEM-->
 
             </div><!--/.ABOUT-->
@@ -182,7 +191,7 @@
 
                 <div class="serv__col">
                     <a class="serv__item" href="ship_repair.html">
-                        <img class="serv__photo" src="assets/images/slider/rapair.jpg" alt="John Smith">
+                        <img class="serv__photo" src="assets/images/slider/ship-repair.jpg" alt="John Smith">
                         <h4 class="serv__name">судоремонт</h4>
                     </a><!--/.serv__ITEM-->
                 </div><!--/.serv__COL-->
@@ -196,7 +205,7 @@
 
                 <div class="serv__col">
                     <a class="serv__item" href="modernization.html">
-                        <img class="serv__photo" src="assets/images/slider/modernizacia.jpg" alt="Anna Filler">
+                        <img class="serv__photo" src="assets/images/slider/modernization.jpg" alt="Anna Filler">
                         <h4 class="serv__name">модернизация</h4>
                     </a><!--/.serv__ITEM-->
                 </div><!--/.serv__COL-->
@@ -250,7 +259,7 @@
                 </div><!--/.BENEFITS__COL-->
 
                 <div class="benefits__col benefits__col--photo">
-                    <img class="img" src="assets/images/benefits-photo.jpg" alt="cargo">
+                    <img class="img" src="assets/images/benefits.jpg" alt="cargo">
                 </div>
 
             </div><!--/.BENEFITS-->
@@ -258,32 +267,72 @@
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
-    <!-- NEWS -->
+    <!-- STATISTICA -->
 
-    <section class="section section--grey" id="news" data-scrollspy="#news">
+    <section class="section" id="stat" data-scrollspy="#stat">
         <div class="container">
-            <h2 class="section__title"><span>Новости</span></h2>
+            <h2 class="section__title section__title--stat"><span>Статистика</span></h2>
+            <canvas id="statistic"></canvas>
+        </div>
+    </section>
 
-            <div class="news">
+    <!-- BAYER -->
 
-                <article class="news__item" data-aos="fade-in">
-                    <h4 class="news__title"><a href="#">Новостной заголовок</a></h4>
-                    <div class="news__text">В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
-                    <time class="news__date" datetime="2021-02-10 12:22">10 Февраля, 2021</time>
-                </article>
+    <div class="section" id="bayer" data-scrollspy="#bayer">
+        <div class="container">
+            <div class="main">
 
-                <article class="news__item" data-aos="fade-in">
-                    <h4 class="news__title"><a href="#">Новостной заголовок</a></h4>
-                    <div class="news__text">В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
-                    <time class="news__date" datetime="2021-02-09 12:22">09 Февраля, 2021</time>
-                </article>
+                <div class="main__col main__col--left">
 
-            </div><!--/.NEWS-->
+                        <h1 class="section__title section__title--blog"><span>Закупки</span></h1>
 
-            <a class="btn btn--orange btn--shadow" href="blog.html"><span>Все новости</span></a>
+                        <article class="news__item">
+                            <div class="news__text">Нас интересую поставки на постоянной основе следующих комплектующих:</div>
+                            <ul>
+                                <li>металлопрокат (судовая сталь)</li>
+                                <li>бесшовные трубы</li>
+                                <li>абразивный порошок</li>
+                                <li>штуцерные соединения</li>
+                            </ul>
+                            <div class="news__text">Мы всегда рады новым партнерам.</div>
+                        </article>
+
+                </div><!--/.MAIN__COL-->
+
+                <div class="main__col main__col--right">
+
+                    <div class="request-form request-form--right">
+
+                        <div class="request-form__header">
+                            <h3 class="request-form__title">Связаться с нами</h3>
+                            <div class="request-form__text">Введите ваши контактные данные и мы перезвоним вам.</div>
+                        </div>
+    
+                        <div class="request-form__content">
+    
+                            <form class="form" action="#" method="POST">
+                                <div class="form__group">
+                                    <input class="input input--person" type="text" placeholder="Ваше имя">
+                                </div>
+                                <div class="form__group">
+                                    <input class="input input--phone" type="tel" placeholder="Ваш номер телефона">
+                                </div>
+                                <div class="form__group">
+                                    <input class="input input--email" type="email" placeholder="Ваш e-mail">
+                                </div>
+                                <button class="btn btn--block btn--orange" type="submit"><span>Перезвоните мне</span></button>
+                            </form><!--/.FORM-->
+    
+                        </div><!--/.REQUEST-FORM__CONTENT-->
+                    </div><!--REQUEST-FORM-->
+
+                </div><!--/.MAIN__COL-->
+
+            </div><!--/.MAIN-->
 
         </div><!--/.CONTAINER-->
-    </section><!--/.SECTION-->
+    </div><!--/.SECTION-->
+
 
     <!-- MISSION -->
 
@@ -563,7 +612,7 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/spincrement.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="assets/js/Chart.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

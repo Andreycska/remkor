@@ -187,6 +187,19 @@ $(function(){
         $('body').removeClass('show-nav');
     });
 
+    // ACORDION =======================================================================
+
+    $("[data-collapse]").on("click", function(event) {
+        event.preventDefault();
+        let blockId = $(this).data("collapse");
+        $(this).toggleClass("active");
+        // $(blockId).slideToggle();
+    });
+
+    $('.acordion__content').on('click', function(event) {
+        event.stopPropagation();
+    });
+
     // AOS.JS ANIMATED BLOCK https://github.com/michalsnik/aos ======================================================================
 
     AOS.init({
@@ -247,5 +260,67 @@ $(function(){
     });
 
    /*LIGHTBOX GALARY  https://www.frescojs.com/documentation*/
+
+    
+
+    var ctx = document.getElementById('statistic').getContext('2d');
+    Chart.defaults.global.defaultFontFamily = "PT Sans";
+    Chart.defaults.global.defaultFontSize = 16;
+    Chart.defaults.global.defaultFontColor = '#2C2C2C';
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['2016', '2017', '2018', '2019', '2020'],
+            datasets: [{
+                label: 'Отремонтированно судов',
+                data: [22, 42, 34, 32, 33],
+                backgroundColor: [
+                    'rgba(216, 27, 96, 0.6)',
+                    'rgba(3, 169, 244, 0.6)',
+                    'rgba(255, 152, 0, 0.6)',
+                    'rgba(29, 233, 182, 0.6)',
+                    'rgba(156, 39, 176, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(216, 27, 96, 1)',
+                    'rgba(3, 169, 244, 1)',
+                    'rgba(255, 152, 0, 1)',
+                    'rgba(29, 233, 182, 1)',
+                    'rgba(156, 39, 176, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: true,
+                text: 'Отремантированно судов в год:',
+                position: 'top',
+                fontSize: 18,
+                color: '#2C2C2C',
+                padding: 20
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                       display: false
+                    }
+                 }],
+                yAxes: [{
+                    ticks: {
+                        min: 0
+                    },
+                    gridLines: {
+                        display: true
+                     }
+                }]
+            }
+        }
+    });
+
+
 
 });
