@@ -27,20 +27,84 @@
         <div class="container">
             <div class="header__inner">
 
-                <a class="header__logo" href="index.html">
-                    <img src="assets/images/headerlogo.svg" alt="CenterLogistic">
-                    <span class="header__logo-text">РЕМКОР</span>
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
                 </a>
 
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="index.html">Главная</a>
-                    <a class="nav__link" href="blog.html">Новости</a>
-                    <a class="nav__link" href="privacy_policy.html">Политика конфиденциальности</a>
-                    <a class="nav__link active" href="terma&conditions.html">Пользовательское соглашение</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="about.html">О компании</a>
+                            <span class="arrow"></span>
+                            
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="about.html#capacity">Производственные мощности</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#benefits">Преимущества</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#stat">Статистика</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#sertificate">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#syot">СУОТ</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">История дока</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Галерея</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#" data-scroll="#serv">Услуги</a>
+                            <span class="arrow arrow-services"></span>
+
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="ship_repair.html">Судоремонт</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="maintenance.html">Судовая обработка</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="modernization.html">Модернизация</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Закупки</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html#clients">Партнеры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-modal="#becameClientModal">Обратная связь</a> 
+                        </li>
+                    </ul> <!--/.NAV__LIST-->
                 </nav><!--/.NAV-->
 
                 <button class="burger" type="button" id="navToggle">
-                    <img class="burger__icon" src="assets/images/burger.svg" alt="Burger Menu">
+                    <span class="burger__line">1</span>
+                    <span class="burger__line">2</span>
+                    <span class="burger__line">3</span>
+                    <span class="burger__line">4</span>
                 </button>
 
             </div><!--/.HEADER__INNER-->
@@ -97,24 +161,139 @@
 
     <footer class="footer">
         <div class="container">
-        
-            <a class="header__logo" href="#" data-scroll="#intro">
-                <img src="assets/images/footer-logo.svg" alt="CenterLogistic">
-            </a>
-            <address class="footer__contacts">
-                <p>г. Севастополь, ул. Приморская дом 2</p>
-                <p>Тел.: <a href="tel:+78692474102">+7 (8692) 47-41-02</a>, Тел.: <a href="tel:+78692474103">+7 (8692) 47-41-03</a></p>
-                <p>E-mail: <a href="mailto:office@aval.moscow">office@aval.moscow</a></p>
-            </address>
+
             <nav class="footer__nav">
-                <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
-                <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
-            </nav>
-            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+                
+                <div class="footer__nav-list footer__nav-list--big">
+                    <a class="footer__logo" href="#" data-scroll="#intro">
+                        <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
+                    </a>
+                </div>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Мощности</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Преимущества</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Статистика</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Сертификаты</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судоремонт</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судовая обработка</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Модернизация</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Закупки</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Вакансии</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">История дока</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">СУОТ</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Галерея</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Партнеры</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav><!--/.FOOTER__NAV-->        
+        
         </div><!--/.CONTAINER-->
+
+        <div class="footer__copyright">
+            <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
+            <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
+            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+        </div>
+
     </footer><!--/.FOOTER-->
 
 </div><!--/.PAGE-->
+
+    <!-- MODALS -->
+
+    <div class="modal" id="becameClientModal">
+        <div class="modal__inner">
+
+            <div class="modal__content">
+
+                <div class="modal__header">
+                    <h4 class="modal__title">Обратная связь</h4>
+                    <div class="modal__text"><p>Заполните небольшую анкету, и мы вам перезвоним!</p></div>
+                </div>
+
+                <form class="form" action="#" method="POST">
+                    <div class="form__group">
+                        <input class="input input--dark input--person" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--phone" type="tel" placeholder="Ваш номер телефонв">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--email" type="email" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="form__group">
+                        <textarea class="add-post__textarea input input--dark input--text" name="text-post" placeholder="Ваше сообщение" data-autoresize></textarea>
+                    </div>
+                    <div class="form__group form__group--flex">
+                        <div class="form-wrapper">
+                            <label class="add-post__file" for="add-post-file">
+                            <input type="file" id="add-post-file">
+                            </label>
+                        </div>
+                        <div class="form-wrapper form-wrapper--btn">
+                            <button class="btn btn--block btn--blue" type="submit"><span>Отправить</span></button>
+                        </div>
+                    </div>
+                </form><!--/.FORM-->
+
+                <div class="modal__footer">
+                    <h4 class="modal__footer-title">Наши контакты</h4>
+                    <address class="modal__contacts">
+                        <p><a href="https://yandex.ru/maps/-/CCUQE2guGB" target="_blank">г. Севастополь, ул. Приморская дом 2, 299016</a></p>
+                        <p>Тел.: <a href="tel:+78692474102">+7 (8692) 47-41-02</a></p>
+                        <p>Тел.: <a href="tel:+78692474103">+7 (8692) 47-41-03</a></p> 
+                        <p>E-mail: <a href="mailto:office@aval.moscow">office@aval.moscow</a></p>
+                    </address>
+                </div>
+
+                <button class="modal__close" type="button" data-modal-close>
+                    <img src="assets/images/close.svg" alt="close">
+                </button>
+
+            </div><!--/.MODAL__CONTENT-->
+        </div><!--/.MODAL__INNER-->
+    </div><!--/.MODAL-->
 
     <!-- JAVASCRIPT -->
 
