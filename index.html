@@ -29,19 +29,76 @@
             <div class="header__inner">
 
                 <a class="header__logo" href="#" data-scroll="#intro">
-                    <img src="assets/images/headerlogo.svg" alt="CenterLogistic">
-                    <span class="header__logo-text">РЕМКОР</span>
+                    <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
                 </a>
 
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="#" data-scroll="#about">О компании</a>
-                    <a class="nav__link" href="#" data-scroll="#serv">Услуги</a>
-                    <a class="nav__link" href="#" data-scroll="#benefits">Преимущества</a>
-                    <a class="nav__link" href="#" data-scroll="#stat">Статистика</a>
-                    <a class="nav__link" href="#" data-scroll="#bayer">Закупки</a>
-                    <a class="nav__link" href="#" data-scroll="#clients">Партнеры</a>
-                    <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
-                    <a class="nav__link" href="#" data-modal="#becameClientModal">Обратная связь</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html" data-scroll="#intro">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#" data-scroll="#about">О компании</a>
+                            <span class="arrow"></span>
+                            
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="about.html#capacity">Производственные мощности</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#benefits">Преимущества</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#stat">Статистика</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#sertificate">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="about.html#syot">СУОТ</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">История дока</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Галерея</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#" data-scroll="#serv">Услуги</a>
+                            <span class="arrow arrow-services"></span>
+
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="ship_repair.html">Судоремонт</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="maintenance.html">Судовая обработка</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="modernization.html">Модернизация</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Закупки</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="#clients">Партнеры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-modal="#becameClientModal">Обратная связь</a> 
+                        </li>
+                    </ul> <!--/.NAV__LIST-->
                 </nav><!--/.NAV-->
 
                 <button class="burger" type="button" id="navToggle">
@@ -70,10 +127,10 @@
                     <div class="intro__text">
                         <div class="container">
                             <div class="intro__content">
-                                <h1 class="intro__title">РЕМКОР</h1>
+                                <h1 class="intro__title intro__title--company">РЕМКОР</h1>
                                 <h2 class="intro__subtitle">Судоремонтная компания</h2>
                             </div>
-                            <a class="btn btn--orange btn--shadow" href="#" data-scroll="#about"><span>Узнайте больше</span></a>
+                            <a class="btn btn--blue btn--shadow" href="about.html"><span>Узнайте больше</span></a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +144,7 @@
                             <div class="intro__content">
                                 <h2 class="intro__title">Судоремонт</h2>
                             </div>
-                            <a class="btn btn--orange btn--shadow" href="ship_repair.html"><span>Узнайте больше</span></a>
+                            <a class="btn btn--blue btn--shadow" href="ship_repair.html"><span>Узнайте больше</span></a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +158,7 @@
                             <div class="intro__content">
                                 <h2 class="intro__title">Судовая обработка</h2>
                             </div>
-                            <a class="btn btn--orange btn--shadow" href="maintenance.html"><span>Узнайте больше</span></a>
+                            <a class="btn btn--blue btn--shadow" href="maintenance.html"><span>Узнайте больше</span></a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +172,7 @@
                             <div class="intro__content">
                                 <h2 class="intro__title">Модернизация</h2>
                             </div>
-                            <a class="btn btn--orange btn--shadow" href="modernization.html"><span>Узнайте больше</span></a>
+                            <a class="btn btn--blue btn--shadow" href="modernization.html"><span>Узнайте больше</span></a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +183,7 @@
 
     <!-- ABOUT -->
 
-    <section class="section" id="about" data-scrollspy="#about">
+    <section class="section" id="about">
         <div class="container">
             <div class="about">
                 
@@ -137,7 +194,7 @@
                         <p>Компания выполняет полный комплекс работ и услуг по ремонту, техническому обслуживанию, переоборудованию, модернизации и докованию судов всех типов и назначений размерами до Panamax size.</p>
                     </div>
                     <div class="about__footer">
-                        <a class="btn btn--orange btn--shadow" href="about.html"><span>Узнайте больше</span></a>
+                        <a class="btn btn--blue btn--shadow btn--width" href="about.html"><span>Узнайте больше</span></a>
                     </div>
                 </div><!--/.ABOUT__ITEM-->
 
@@ -149,41 +206,9 @@
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
-    <!-- PLANT -->
-
-    <div class="plant">
-        <div class="container">
-            <div class="plant__inner">
-                <div class="plant__header">
-                    <h2 class="plant__title">О компании в цифрах</h2>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/drilling.svg" alt="drilling">
-                    <h4 class="plant__number">280</h4>
-                    <div class="plant__text">станочный парк, ед.</div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/port.svg" alt="dry dock">
-                    <h4 class="plant__number">1</h4>
-                    <div class="plant__text">Сухой док, 290.0м x 36.0м x 11.0м</div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/uncoiler.svg" alt="uncoiler">
-                    <h4 class="plant__number">18</h4>
-                    <div class="plant__text">оцинкованных рештований, тыс.м<sup>3</sup></div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/factory.svg" alt="factory">
-                    <h4 class="plant__number">10</h4>
-                    <div class="plant__text">площадь завода, га.</div>
-                </div>
-            </div>
-        </div><!--/.CONTAINER-->
-    </div><!--/.PLANT-->
-
     <!-- service -->
 
-    <section class="section" id="serv" data-scrollspy="#serv">
+    <section class="section" id="serv">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> Услуги</h2>
 
@@ -217,7 +242,7 @@
 
     <!-- BENEFITS -->
 
-    <section class="section" id="benefits" data-scrollspy="#benefits">
+    <section class="section" id="benefits"">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> преимущества</h2>
             <div class="benefits">
@@ -267,18 +292,54 @@
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
+    <!-- PLANT -->
+
+    <div class="plant" id="plant">
+        <div class="container">
+            <div class="plant__inner">
+                <div class="plant__header">
+                    <h2 class="plant__title">Производственные мощности</h2>
+                </div>
+
+                <div class="plant__col">
+                    <a class="plant__item" href="about.html#dry-dok">
+                        <img class="plant__photo" src="assets/images/dry-dok.jpg" alt="Сухой док">
+                        <h4 class="plant__name">Сухой док</h4>
+                    </a><!--/.plant__ITEM-->
+                </div><!--/.plant__COL-->
+    
+                <div class="plant__col">
+                    <a class="plant__item" href="about.html#stanochniy">
+                        <img class="plant__photo" src="assets/images/stanochniy.jpg" alt="Станочный парк">
+                        <h4 class="plant__name">Станочный парк</h4>
+                    </a><!--/.plant__ITEM-->
+                </div><!--/.plant__COL-->
+    
+                <div class="plant__col">
+                    <a class="plant__item" href="about.html#proizvodstvo">
+                        <img class="plant__photo" src="assets/images/proizvodstvo.jpg" alt="Производственных цех ">
+                        <h4 class="plant__name">Производственный цех </h4>
+                    </a><!--/.plant__ITEM-->
+                </div><!--/.plant__COL-->
+    
+            </div>
+        </div><!--/.CONTAINER-->
+    </div><!--/.PLANT-->
+
     <!-- STATISTICA -->
 
-    <section class="section" id="stat" data-scrollspy="#stat">
+    <section class="section section--stat" id="stat">
         <div class="container">
             <h2 class="section__title section__title--stat"><span>Статистика</span></h2>
-            <canvas id="statistic"></canvas>
+            <div class="table-responsive">
+                <canvas id="statistic" style="min-height:250px" class="table1"></canvas>
+            </div>
         </div>
     </section>
 
     <!-- BAYER -->
 
-    <div class="section" id="bayer" data-scrollspy="#bayer">
+    <!-- <div class="section" id="bayer" data-scrollspy="#bayer">
         <div class="container">
             <div class="main">
 
@@ -297,7 +358,7 @@
                             <div class="news__text">Мы всегда рады новым партнерам.</div>
                         </article>
 
-                </div><!--/.MAIN__COL-->
+                </div>
 
                 <div class="main__col main__col--right">
 
@@ -321,22 +382,22 @@
                                     <input class="input input--email" type="email" placeholder="Ваш e-mail">
                                 </div>
                                 <button class="btn btn--block btn--orange" type="submit"><span>Перезвоните мне</span></button>
-                            </form><!--/.FORM-->
+                            </form>
     
-                        </div><!--/.REQUEST-FORM__CONTENT-->
-                    </div><!--REQUEST-FORM-->
+                        </div>
+                    </div>
 
-                </div><!--/.MAIN__COL-->
+                </div
 
-            </div><!--/.MAIN-->
+            </div>
 
-        </div><!--/.CONTAINER-->
-    </div><!--/.SECTION-->
+        </div>
+    </div> -->
 
 
     <!-- MISSION -->
 
-    <section class="section" id="mission" data-scrollspy="#mission">
+    <section class="section" id="mission">
         <div class="container">
 
             <h2 class="mission-title">Наша миссия</h2>
@@ -347,7 +408,7 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn--orange btn--shadow" type="button" data-modal="#becameClientModal"><span>Станьте нашим клиентом</span></button>
+                <button class="btn btn--blue btn--shadow btn--width" type="button" data-modal="#becameClientModal"><span>Станьте нашим клиентом</span></button>
             </div>
 
         </div><!--/.CONTAINER-->
@@ -355,7 +416,7 @@
 
     <!-- CLIENTS -->
 
-    <section class="section section--map" id="clients" data-scrollspy="#clients">
+    <section class="section section--map" id="clients">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> Клиенты</h2>
 
@@ -453,14 +514,14 @@
                 </div><!--/.CLIENTS__REVIEWS-->
             </div><!--/.CLIENTS-->
 
-            <button class="btn btn--orange btn--shadow" type="button" data-modal="#becameClientModal"><span>Станьте нашим клиентом</span></button>
+            <button class="btn btn--blue btn--shadow btn--width" type="button" data-modal="#becameClientModal"><span>Станьте нашим клиентом</span></button>
 
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
     <!-- CONTACTS -->
 
-    <section class="section section--contacts" id="contacts" data-scrollspy="#contacts">
+    <section class="section section--contacts" id="contacts">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> Контакты</h2>
         </div><!--/.CONTAINER-->
@@ -515,22 +576,81 @@
 
     <footer class="footer">
         <div class="container">
-        
-            <a class="header__logo" href="#" data-scroll="#intro">
-                <img src="assets/images/footer-logo.svg" alt="CenterLogistic">
-                <span class="header__logo-text">РЕМКОР</span>
-            </a>
-            <address class="footer__contacts">
-                <p>г. Севастополь, ул. Приморская дом 2</p>
-                <p>Тел.: <a href="tel:+78692474102">+7 (8692) 47-41-02</a>, Тел.: <a href="tel:+78692474103">+7 (8692) 47-41-03</a></p>
-                <p>E-mail: <a href="mailto:office@aval.moscow">office@aval.moscow</a></p>
-            </address>
+
             <nav class="footer__nav">
-                <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
-                <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
-            </nav>
-            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+                
+                <div class="footer__nav-list footer__nav-list--big">
+                    <a class="footer__logo" href="#" data-scroll="#intro">
+                        <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
+                    </a>
+                </div>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Мощности</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Преимущества</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Статистика</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Сертификаты</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судоремонт</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судовая обработка</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Модернизация</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Закупки</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Вакансии</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">История дока</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">СУОТ</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Галерея</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Партнеры</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav><!--/.FOOTER__NAV-->        
+        
         </div><!--/.CONTAINER-->
+
+        <div class="footer__copyright">
+            <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
+            <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
+            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+        </div>
+
     </footer><!--/.FOOTER-->
 
 </div><!--/.PAGE-->
@@ -543,7 +663,7 @@
             <div class="modal__content">
 
                 <div class="modal__header">
-                    <h4 class="modal__title">Нужно отремантировать ваше судно?<br>Мы можем помочь</h4>
+                    <h4 class="modal__title">Обратная связь</h4>
                     <div class="modal__text"><p>Заполните небольшую анкету, и мы вам перезвоним!</p></div>
                 </div>
 
@@ -557,7 +677,19 @@
                     <div class="form__group">
                         <input class="input input--dark input--email" type="email" placeholder="Ваш e-mail">
                     </div>
-                    <button class="btn btn--block btn--orange" type="submit"><span>Перезвоните мне</span></button>
+                    <div class="form__group">
+                        <textarea class="add-post__textarea input input--dark input--text" name="text-post" placeholder="Ваше сообщение" data-autoresize></textarea>
+                    </div>
+                    <div class="form__group form__group--flex">
+                        <div class="form-wrapper">
+                            <label class="add-post__file" for="add-post-file">
+                            <input type="file" id="add-post-file">
+                            </label>
+                        </div>
+                        <div class="form-wrapper form-wrapper--btn">
+                            <button class="btn btn--block btn--blue" type="submit"><span>Отправить</span></button>
+                        </div>
+                    </div>
                 </form><!--/.FORM-->
 
                 <div class="modal__footer">

@@ -17,7 +17,7 @@
     <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#004AF2">
     <meta name="msapplication-TileColor" content="#004AF2">
     <meta name="theme-color" content="#004AF2">
-    <title>РЕМКОР - судоремонтная компания</title>
+    <title>РЕМКОР | о компании</title>
 </head>
 <body>
 
@@ -29,20 +29,78 @@
         <div class="container">
             <div class="header__inner">
 
-                <a class="header__logo" href="index.html" data-scroll="#intro">
-                    <img src="assets/images/headerlogo.svg" alt="CenterLogistic">
-                    <span class="header__logo-text">РЕМКОР</span>
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
                 </a>
 
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="index.html">Главная</a>
-                    <a class="nav__link" href="#" data-scroll="#about">О компании</a>
-                    <a class="nav__link" href="#" data-scroll="#serv">Услуги</a>
-                    <a class="nav__link" href="#" data-scroll="#benefits">Преимущества</a>
-                    <a class="nav__link" href="#" data-scroll="#sertificate">Сертефикаты</a>
-                    <a class="nav__link" href="#" data-scroll="#syot">СУОТ</a>
-                    <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
-                    <a class="nav__link" href="#" data-modal="#becameClientModal">Свяжитесь с нами</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#" data-scroll="#about">О компании</a>
+                            <span class="arrow"></span>
+                            
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#" data-scroll="#capacity">Производственные мощности</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" data-scroll="#benefits">Преимущества</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" data-scroll="#stat">Статистика</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#"
+                                    data-scroll="#sertificate">Сертификаты</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#" data-scroll="#syot">СУОТ</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">История дока</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Галерея</a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#" data-scroll="#serv">Услуги</a>
+                            <span class="arrow arrow-services"></span>
+
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="ship_repair.html" data-scroll="#plant">Судоремонт</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="maintenance.html" data-scroll="#benefits">Судовая обработка</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="modernization.html" data-scroll="#stat">Модернизация</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Закупки</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html#clients">Партнеры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" data-modal="#becameClientModal">Обратная связь</a> 
+                        </li>
+                    </ul> <!--/.NAV__LIST-->
                 </nav><!--/.NAV-->
 
                 <button class="burger" type="button" id="navToggle">
@@ -59,11 +117,20 @@
 
     <!-- INTRO -->
 
-    <div class="intro intro--about" id="intro"></div>
+    <div class="intro intro--about" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__title intro__title--company">РЕМКОР</h2>
+                    <h3 class="intro__subtitle">Судоремонтная компания</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ABOUT -->
 
-    <section class="section" id="about" data-scrollspy="#about">
+    <section class="section" id="about">
         <div class="container">
             <div class="about">
                 
@@ -83,41 +150,160 @@
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
-    <!-- PLANT -->
+    <!-- CAPACITY -->
 
-    <div class="plant">
+    <section class="section" id="capacity">
         <div class="container">
-            <div class="plant__inner">
-                <div class="plant__header">
-                    <h2 class="plant__title">О компании в цифрах</h2>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/drilling.svg" alt="drilling">
-                    <h4 class="plant__number">280</h4>
-                    <div class="plant__text">станочный парк, ед.</div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/port.svg" alt="dry dock">
-                    <h4 class="plant__number">1</h4>
-                    <div class="plant__text">Сухой док, 290.0м x 36.0м x 11.0м</div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/uncoiler.svg" alt="uncoiler">
-                    <h4 class="plant__number">18</h4>
-                    <div class="plant__text">оцинкованных рештований, тыс.м<sup>3</sup></div>
-                </div>
-                <div class="plant__item">
-                    <img class="plant__icon" src="assets/images/icon/factory.svg" alt="factory">
-                    <h4 class="plant__number">10</h4>
-                    <div class="plant__text">площадь завода, га.</div>
-                </div>
-            </div>
+
+            <h2 class="section__title"><span>Производственные</span> мощности</h2>
+
+            <div class="capacity">
+                
+                <div class="capacity__item" id="dry-dok">
+                    <div class="capacity__col">
+                        <div class="capacity__inner">
+                            <h4 class="capacity__title">Компания РЕМКОР располагает сухим доком размером "Panamax" -  290х36х11 м. Доковое сооружение обеспечено:</h4>
+                                <ul class="capacity__list">
+                                    <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">портальными кранами, грузоподъемностью от 10 до 80 т – 6 шт;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">лебедками, талями, устройством демонтажа гребного вала;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">централизованной подачей природного газа, кислорода, сжатого воздуха, пресной и морской воды и разветвленной системой электроснабжения;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">очистным и окрасочным оборудованием</div> 
+                                   </li>
+                               </ul>                            
+                        </div>
+                    </div><!--/.CAPACITY__COL-->
+
+                    <div class="capacity__col capacity__col--photo">
+                        <img class="capacity__img" src="assets/images/dry-dok.jpg" alt="Сухой док">
+                    </div>
+                </div><!--/.CAPACITY__ITEM-->
+
+                <div class="capacity__item" id="stanochniy">
+                    <div class="capacity__col capacity__col--order">
+                        <div class="capacity__inner">
+                            <h4 class="capacity__title">Компания РЕМКОР располагает станочным парком в 280 едениц:</h4>
+                                <ul class="capacity__list">
+                                    <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">токарно-винторезные (Ø обработки до 1600мм и 10м длиной.);</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">токарно-расточные (с Ø обработки от 100мм до 1м);</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">токарно-карусельные (с Ø обработки от 100мм обработки до 2м);</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">фрезерные, заточные;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                    <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                    <div class="capacity__text">зубонарезные, зубошлифовальные;</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">продольнофрезерные (с длиной обработки до 6м);</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">сверлильные (с Ø сверления до 75мм);</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">шлифовальные (в том числе для шлифовки шеек коленвалов Ø 150-300мм и радиус вращения до 510мм);</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                    <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                    <div class="capacity__text">для наплавки изделий (валов Ø от 250 до 600 мм , длиной до 2,8м, колес и пр.);</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">балансировочные (динамическая балансировка деталей весом до 3 т и Ø до 1,5 м);</div> 
+                                    </li>
+
+                                </ul>                            
+                        </div>
+                    </div><!--/.CAPACITY__COL-->
+
+                    <div class="capacity__col capacity__col--photo">
+                        <img class="capacity__img" src="assets/images/stanochniy.jpg" alt="Станочный парк">
+                    </div>
+                </div><!--/.CAPACITY__ITEM-->
+
+                <div class="capacity__item" id="proizvodstvo">
+                    <div class="capacity__col">
+                        <div class="capacity__inner">
+                            <h4 class="capacity__title">Компания РЕМКОР располагает производственным цехом в  16 000 м2. Участки:</h4>
+                                <ul class="capacity__list">
+                                    <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">корпусно-достроечный;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">малярный;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">ремонта арматуры;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                       <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                       <div class="capacity__text">ремонта судовых механизмов;</div> 
+                                   </li>
+                                   <li class="capacity__content">
+                                    <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                    <div class="capacity__text">токарно-шлифовальный;</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">балансировочный;</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                        <div class="capacity__text">термообработки.</div> 
+                                    </li>
+                                    <li class="capacity__content">
+                                        <div class="capacity__text capacity__text--subtext">Оборудование цеха:</div> 
+                                        </li>
+                                        <li class="capacity__content">
+                                            <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                            <div class="capacity__text">мостовые краны г/п 10-50 т – 14 ед;</div> 
+                                        </li>
+                                        <li class="capacity__content">
+                                            <img class="capacity__photo" src="assets/images/modal-tick.svg" alt="tick">
+                                            <div class="capacity__text">станочный парк – 280 ед.</div> 
+                                        </li>
+                                </ul>                            
+                        </div>
+                    </div><!--/.CAPACITY__COL-->
+
+                    <div class="capacity__col capacity__col--photo">
+                        <img class="capacity__img" src="assets/images/proizvodstvo.jpg" alt="Производственных цех">
+                    </div>
+                </div><!--/.CAPACITY__ITEM-->
+
+            </div><!--/.CAPACITY-->
         </div><!--/.CONTAINER-->
-    </div><!--/.PLANT-->
+    </section><!--/.SECTION-->
 
     <!-- service -->
 
-    <section class="section" id="serv" data-scrollspy="#serv">
+    <section class="section" id="serv">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> Услуги</h2>
 
@@ -151,7 +337,7 @@
 
     <!-- BENEFITS -->
 
-    <section class="section" id="benefits" data-scrollspy="#benefits">
+    <section class="section" id="benefits">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> преимущества</h2>
             <div class="benefits">
@@ -193,7 +379,7 @@
                 </div><!--/.BENEFITS__COL-->
 
                 <div class="benefits__col benefits__col--photo">
-                    <img class="img" src="assets/images/benefits-photo.jpg" alt="cargo">
+                    <img class="img" src="assets/images/benefits.jpg" alt="cargo">
                 </div>
 
             </div><!--/.BENEFITS-->
@@ -201,9 +387,20 @@
         </div><!--/.CONTAINER-->
     </section><!--/.SECTION-->
 
+    <!-- STATISTICA -->
+
+    <section class="section section--stat" id="stat">
+        <div class="container">
+            <h2 class="section__title section__title--stat"><span>Статистика</span></h2>
+            <div class="table-responsive">
+                <canvas id="statistic" style="min-height:250px" class="table1"></canvas>
+            </div>
+        </div>
+    </section>
+
     <!-- SERTIFICATE -->
 
-    <section class="section" id="sertificate" data-scrollspy="#sertificate">
+    <section class="section" id="sertificate">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> сертификаты</h2>
             <div class="sertificate">
@@ -243,7 +440,7 @@
 
     <!-- SYOT -->
 
-    <section class="section" id="syot" data-scrollspy="#syot">
+    <section class="section" id="syot">
         <div class="container">
             <h1 class="section__title"><span>СУОТ</span></h1>
 
@@ -1238,7 +1435,7 @@
 
     <!-- CONTACTS -->
 
-    <section class="section section--contacts" id="contacts" data-scrollspy="#contacts">
+    <section class="section section--contacts" id="contacts">
         <div class="container">
             <h2 class="section__title"><span>Наши</span> Контакты</h2>
         </div><!--/.CONTAINER-->
@@ -1293,22 +1490,81 @@
 
     <footer class="footer">
         <div class="container">
-        
-            <a class="header__logo" href="#" data-scroll="#intro">
-                <img src="assets/images/footer-logo.svg" alt="CenterLogistic">
-                <span class="header__logo-text">РЕМКОР</span>
-            </a>
-            <address class="footer__contacts">
-                <p>г. Севастополь, ул. Приморская дом 2</p>
-                <p>Тел.: <a href="tel:+78692474102">+7 (8692) 47-41-02</a>, Тел.: <a href="tel:+78692474103">+7 (8692) 47-41-03</a></p>
-                <p>E-mail: <a href="mailto:office@aval.moscow">office@aval.moscow</a></p>
-            </address>
+
             <nav class="footer__nav">
-                <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
-                <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
-            </nav>
-            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+                
+                <div class="footer__nav-list footer__nav-list--big">
+                    <a class="footer__logo" href="#" data-scroll="#intro">
+                        <img src="assets/images/logo-remkor.png" alt="РЕМКОР">
+                    </a>
+                </div>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Мощности</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Преимущества</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Статистика</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Сертификаты</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судоремонт</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Судовая обработка</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Модернизация</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Закупки</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Вакансии</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">История дока</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">СУОТ</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Галерея</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Партнеры</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a class="footer__nav-link" href="#">Обратная связь</a>
+                    </li>
+                </ul>
+            </nav><!--/.FOOTER__NAV-->        
+        
         </div><!--/.CONTAINER-->
+
+        <div class="footer__copyright">
+            <a class="footer__nav-link" href="terma&conditions.html">Пользовательское соглашение</a>
+            <a class="footer__nav-link" href="privacy_policy.html">Политика конфиденциальности</a>
+            <div class="footer__copyright">© 2021 Общество с ограниченной ответственностью "РЕМКОР"</div>
+        </div>
+
     </footer><!--/.FOOTER-->
 
 </div><!--/.PAGE-->
@@ -1321,7 +1577,7 @@
             <div class="modal__content">
 
                 <div class="modal__header">
-                    <h4 class="modal__title">Нужно отремантировать ваше судно?<br>Мы можем помочь</h4>
+                    <h4 class="modal__title">Обратная связь</h4>
                     <div class="modal__text"><p>Заполните небольшую анкету, и мы вам перезвоним!</p></div>
                 </div>
 
@@ -1335,7 +1591,19 @@
                     <div class="form__group">
                         <input class="input input--dark input--email" type="email" placeholder="Ваш e-mail">
                     </div>
-                    <button class="btn btn--block btn--orange" type="submit"><span>Перезвоните мне</span></button>
+                    <div class="form__group">
+                        <textarea class="add-post__textarea input input--dark input--text" name="text-post" placeholder="Ваше сообщение" data-autoresize></textarea>
+                    </div>
+                    <div class="form__group form__group--flex">
+                        <div class="form-wrapper">
+                            <label class="add-post__file" for="add-post-file">
+                            <input type="file" id="add-post-file">
+                            </label>
+                        </div>
+                        <div class="form-wrapper form-wrapper--btn">
+                            <button class="btn btn--block btn--blue" type="submit"><span>Отправить</span></button>
+                        </div>
+                    </div>
                 </form><!--/.FORM-->
 
                 <div class="modal__footer">
@@ -1391,6 +1659,7 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/spincrement.min.js"></script>
     <script src="assets/fresco-2.3.0/dist/js/fresco.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

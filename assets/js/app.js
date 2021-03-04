@@ -8,6 +8,18 @@ $(function(){
     let introH = intro.innerHeight(); //hieght intro
     let scrollTop = $(window).scrollTop();
 
+    // TEXTAREA========================================================
+
+    const textArea = document.querySelectorAll('[data-autoresize]');
+
+    textArea.forEach(item => {
+        item.addEventListener('input', event =>{
+            let $this = event.target;
+            $this.style.height = '35px'
+            $this.style.height = $this.scrollHeight + 'px';
+        });
+    });
+
     // HEADER CHANGE ======================================================================
 
     headerScroll();  // Для того чтобы при обновлении страницы выявить нужно прозрачноре меню или темное
@@ -27,6 +39,8 @@ $(function(){
             header.removeClass('header--dark');
         }
     }
+
+    // 
 
     // SMOOTH SCROLL TO SECTION ======================================================================
 
@@ -172,6 +186,32 @@ $(function(){
 
     //   BURGER MENU ======================================================================
 
+    let isMobile = {
+        Android: function() {return navigator.userAgent.match(/Android/i);},
+        BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+        iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+        Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+        Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+        any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+    };
+        let body=document.querySelector('body');
+            if(isMobile.any()){
+                    body.classList.add('touch');
+                    let arrow = document.querySelectorAll('.arrow');
+                    for(i=0; i<arrow.length; i++){
+                            let thisLink=arrow[i].previousElementSibling;
+                            let subMenu=arrow[i].nextElementSibling;
+                            let thisArrow=arrow[i];
+                
+                            arrow[i].addEventListener('click', function(){
+                                subMenu.classList.toggle('open');
+                                thisArrow.classList.toggle('active');
+                            });
+                    }
+            }else{
+                body.classList.add('mouse');
+            }
+
     navToggle.on('click', function(event) {
         event.preventDefault();
 
@@ -270,28 +310,29 @@ $(function(){
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['2016', '2017', '2018', '2019', '2020'],
+            labels: ['2016 год', '2017 год', '2018 год', '2019 год', '2020 год'],
             datasets: [{
                 label: 'Отремонтированно судов',
                 data: [22, 42, 34, 32, 33],
                 backgroundColor: [
-                    'rgba(216, 27, 96, 0.6)',
-                    'rgba(3, 169, 244, 0.6)',
-                    'rgba(255, 152, 0, 0.6)',
-                    'rgba(29, 233, 182, 0.6)',
-                    'rgba(156, 39, 176, 0.6)'
+                    'rgba(95, 125, 190, 0.9)',
+                    'rgba(95, 125, 190, 0.9)',
+                    'rgba(96, 125, 190, 0.9)',
+                    'rgba(96, 125, 190, 0.9)',
+                    'rgba(96, 125, 190, 0.9)'
                 ],
                 borderColor: [
-                    'rgba(216, 27, 96, 1)',
-                    'rgba(3, 169, 244, 1)',
-                    'rgba(255, 152, 0, 1)',
-                    'rgba(29, 233, 182, 1)',
-                    'rgba(156, 39, 176, 1)'
+                    'rgba(96, 125, 190, 1)',
+                    'rgba(95, 125, 190, 1)',
+                    'rgba(96, 125, 190, 1)',
+                    'rgba(96, 125, 190, 1)',
+                    'rgba(96, 125, 190, 1)'
                 ],
                 borderWidth: 1
             }]
         },
         options: {
+            responsive: true,
             legend: {
                 display: false
             },
@@ -320,7 +361,5 @@ $(function(){
             }
         }
     });
-
-
 
 });
