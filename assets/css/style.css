@@ -2152,6 +2152,31 @@ text p {
     margin-bottom: 5px;
 }
 
+/* HISTORY */
+
+.history__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #585858;
+}
+
+.history__text:last-child {
+    margin-bottom: 0;
+}
+
+.history__photo {
+    margin-bottom: 20px;
+}
+
+.history__subtitle {
+    margin-top: 10px;
+    
+    font-size: 14px;
+    line-height: 1.4;
+    color: #585858;
+}
+
 /* MEDIA Queries */
 
 @media (max-width: 991px) {
