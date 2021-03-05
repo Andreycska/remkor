@@ -265,31 +265,6 @@ $(function(){
       
       });
 
-
-    /*ANIMATION NUMBER======================================================== https://github.com/johnjcamilleri/jquery-spincrement */
-
-    var show = true;
-    var countbox = ".plant__inner";
-    $(window).on("scroll load resize", function () {
-        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-        var w_height = $(window).height(); // Высота окна браузера
-        var d_height = $(document).height(); // Высота всего документа
-        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-        if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-            $(document).ready(function(){
-                $('.plant__number').spincrement({
-                    thousandSeparator: "",
-                    from: 0,
-                    easing: 'spincrementEasing',
-                    duration: 1200
-                });
-            });
-           show = false;
-        }
-    });
-
     /*MAP*/
 
     let wrapMap = $('#wrapMap');
@@ -361,5 +336,44 @@ $(function(){
             }
         }
     });
+
+    // GALLARY=========================================================
+
+    $('.gallary__img').venobox({
+        numeratio: true,
+        border: '10px'
+      });
+
+    $('.venoboxframe').venobox({
+        border: '6px',
+        overlayColor : 'rgba(255,255,255,0.85)',
+        titlePosition : 'bottom',
+        titleColor: '#333',
+        titleBackground: 'transparent',
+        closeColor: '#333',
+        closeBackground: 'transparent',
+        spinner : 'wave'
+    });
+
+    $('.venoboxvid').venobox({
+        bgcolor: '#000',
+        spinner : 'cube-grid',
+    });
+
+    $('.venoboxinline').venobox({
+        numeratio: true,
+        framewidth: '400px',
+        frameheight: 'auto',
+        border: '19px',
+        bgcolor: '#f46f00',
+        titleattr: 'data-title',
+        infinigall: true,
+    });
+
+    $('.fresco').venobox ({
+        numeratio: true,
+        border: '10px'
+    });
+        
 
 });
