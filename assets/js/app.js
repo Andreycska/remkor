@@ -274,10 +274,6 @@ $(function(){
         $(map).addClass('pointer');
     });
 
-   /*LIGHTBOX GALARY  https://www.frescojs.com/documentation*/
-
-    
-
     var ctx = document.getElementById('statistic').getContext('2d');
     Chart.defaults.global.defaultFontFamily = "PT Sans";
     Chart.defaults.global.defaultFontSize = 16;
@@ -377,3 +373,4 @@ $(function(){
         
 
 });
+

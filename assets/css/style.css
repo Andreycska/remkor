@@ -2647,12 +2647,8 @@ text p {
         font-size: 19px;
     }
 
-    .intro__title-amp {
-        font-size: 100px;
-    }
-
     .intro__title--page {
-        font-size: 40px;
+        font-size: 27px;
     }
 
     /* REQUEST */
@@ -2841,10 +2837,6 @@ text p {
         font-size: 60px;
     }
 
-    .intro__title-amp {
-        font-size: 90px;
-    }
-
     /* SECTION */
 
     .section {
@@ -3023,7 +3015,7 @@ text p {
     /* INTRO */
 
     .intro__title {
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .intro__title--company {

@@ -74,7 +74,7 @@
                                     <a class="subnav__link" href="ship_repair.html">Судоремонт</a>
                                 </li>
                                 <li>
-                                    <a class="subnav__link" href="maintenance.html">Судовая обработка</a>
+                                    <a class="subnav__link" href="maintenance.html">Специализированные мощности</a>
                                 </li>
                                 <li>
                                     <a class="subnav__link" href="modernization.html">Модернизация</a>
@@ -89,7 +89,7 @@
                             <a class="nav__link" href="index.html#clients">Партнеры</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Вакансии</a>
+                            <a class="nav__link" href="#" data-modal="#becameVacancyModal">Вакансии</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
@@ -315,8 +315,8 @@
 
                 <div class="serv__col">
                     <a class="serv__item" href="maintenance.html">
-                        <img class="serv__photo" src="assets/images/slider/obrabotka.jpg" alt="Anna Filler">
-                        <h4 class="serv__name">Судовая обработка</h4>
+                        <img class="serv__photo" src="assets/images/slider/obrabotka.jpg" alt="Специализированные мощности">
+                        <h4 class="serv__name">Специализированные мощности</h4>
                     </a><!--/.serv__ITEM-->
                 </div><!--/.serv__COL-->
 
@@ -686,7 +686,7 @@
                         <a class="footer__nav-link" href="#">Судоремонт</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">Судовая обработка</a>
+                        <a class="footer__nav-link" href="#">Специализированные мощности</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="#">Модернизация</a>
@@ -698,13 +698,13 @@
 
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">Вакансии</a>
+                        <a class="footer__nav-link" href="#" data-modal="#becameVacancyModal">Вакансии</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="#">История дока</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">СУОТ</a>
+                        <a class="footer__nav-link" href="syot.html">СУОТ</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="#">Галерея</a>
@@ -719,7 +719,7 @@
                         <a class="footer__nav-link" href="#">Контакты</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="#">Обратная связь</a>
+                        <a class="footer__nav-link" href="#" data-modal="#becameClientModal">Обратная связь</a>
                     </li>
                 </ul>
             </nav><!--/.FOOTER__NAV-->        
@@ -746,6 +746,59 @@
                 <div class="modal__header">
                     <h4 class="modal__title">Обратная связь</h4>
                     <div class="modal__text"><p>Заполните небольшую анкету, и мы вам перезвоним!</p></div>
+                </div>
+
+                <form class="form" action="#" method="POST">
+                    <div class="form__group">
+                        <input class="input input--dark input--person" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--phone" type="tel" placeholder="Ваш номер телефонв">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--email" type="email" placeholder="Ваш e-mail">
+                    </div>
+                    <div class="form__group">
+                        <textarea class="add-post__textarea input input--dark input--text" name="text-post" placeholder="Ваше сообщение" data-autoresize></textarea>
+                    </div>
+                    <div class="form__group form__group--flex">
+                        <div class="form-wrapper">
+                            <label class="add-post__file" for="add-post-file">
+                            <input type="file" id="add-post-file">
+                            </label>
+                        </div>
+                        <div class="form-wrapper form-wrapper--btn">
+                            <button class="btn btn--block btn--blue" type="submit"><span>Отправить</span></button>
+                        </div>
+                    </div>
+                </form><!--/.FORM-->
+
+                <div class="modal__footer">
+                    <h4 class="modal__footer-title">Наши контакты</h4>
+                    <address class="modal__contacts">
+                        <p><a href="https://yandex.ru/maps/-/CCUQE2guGB" target="_blank">г. Севастополь, ул. Приморская дом 2, 299016</a></p>
+                        <p>Тел.: <a href="tel:+78692474102">+7 (8692) 47-41-02</a></p>
+                        <p>Тел.: <a href="tel:+78692474103">+7 (8692) 47-41-03</a></p> 
+                        <p>E-mail: <a href="mailto:office@aval.moscow">office@aval.moscow</a></p>
+                    </address>
+                </div>
+
+                <button class="modal__close" type="button" data-modal-close>
+                    <img src="assets/images/close.svg" alt="close">
+                </button>
+
+            </div><!--/.MODAL__CONTENT-->
+        </div><!--/.MODAL__INNER-->
+    </div><!--/.MODAL-->
+
+    <div class="modal" id="becameVacancyModal">
+        <div class="modal__inner">
+
+            <div class="modal__content">
+
+                <div class="modal__header">
+                    <h4 class="modal__title">Свяжитесь <br>с нами</h4>
+                    <div class="modal__text"><p>Отправьте нам свой запрос или оставьте сообщение, заполнив форму обратной связи. Мы постараемся оперативно ответить Вам.</p></div>
                 </div>
 
                 <form class="form" action="#" method="POST">
