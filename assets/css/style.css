@@ -616,7 +616,7 @@ body.show-nav .header,
 }
 
 .intro__title {
-    font-size: 110px;
+    font-size: 85px;
     line-height: .9;
     font-weight: 700;
     color: rgba(255, 255, 255, .9);
@@ -2428,7 +2428,7 @@ text p {
     }
 
     .intro__title {
-        font-size: 90px;
+        font-size: 65px;
     }
 
     .intro__subtitle {
@@ -2640,7 +2640,7 @@ text p {
     }
 
     .intro__title {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .intro__subtitle {
@@ -2834,7 +2834,7 @@ text p {
     }
 
     .intro__title {
-        font-size: 60px;
+        font-size: 35px;
     }
 
     /* SECTION */
