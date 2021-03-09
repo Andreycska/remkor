@@ -2369,8 +2369,12 @@ text p {
         background: none;
     }
 
-    .nav__link.has-subnav::after {
+    /* .nav__link.has-subnav::after {
         display: none;
+    } */
+
+    .has__subnav--about.open .subnav--about {
+        display: block;
     }
 
     .subnav {
@@ -2388,6 +2392,10 @@ text p {
     }
 
     .arrow {
+        width: 100%;
+
+        opacity: 0;
+        
         top: 25px;
         right: 10.5px;
         transform: translateY(0);
