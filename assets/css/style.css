@@ -432,7 +432,7 @@ body.show-nav .header,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 600px;
 
     background: url('../images/slider/ship-repair.jpg') center no-repeat;
     background-size: cover;
