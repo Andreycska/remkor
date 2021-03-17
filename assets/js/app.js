@@ -813,7 +813,6 @@
     }); // extend
 })(jQuery);
 $(function() {
-    console.log('hi');
     let header = $('#header');
     let intro = $('#intro');
     let navToggle = $('#navToggle');
